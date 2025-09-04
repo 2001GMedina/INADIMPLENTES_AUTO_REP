@@ -145,7 +145,7 @@ HIST_INAD AS (
         C.STATUS_CLIENTE_ID IN (33, 34)
         AND C.FORMA_PAGAMENTO_ID IN (13, 14)
         AND C.ID NOT IN ('111295', '111302', '111304', '91225')
-        AND P.ID <> 19
+        AND P.ID NOT IN('19', '10')
         AND (
             C.STATUS_CLIENTE_ID <> 34
             OR EXISTS (
