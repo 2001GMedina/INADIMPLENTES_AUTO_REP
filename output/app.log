@@ -691,3 +691,23 @@ gspread.exceptions.WorksheetNotFound: INADIMPLENTES
 2025-08-13 15:58:26 [INFO] - 2 linhas retornadas da segunda query (valor_geral).
 2025-08-13 15:58:26 [INFO] - HTML das tabelas gerado com sucesso.
 2025-08-13 15:58:45 [INFO] - E-mail enviado com sucesso!
+2025-09-26 14:22:29 [INFO] - 8 linhas retornadas da primeira query (inadimplentes).
+2025-09-26 14:22:30 [INFO] - 2 linhas retornadas da segunda query (resumo_total).
+2025-09-26 14:22:31 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
+2025-09-26 14:22:31 [INFO] - HTML das tabelas gerado com sucesso.
+2025-09-26 14:22:47 [INFO] - E-mail enviado com sucesso!
+2025-09-26 14:32:28 [INFO] - 8 linhas retornadas da primeira query (inadimplentes).
+2025-09-26 14:32:29 [INFO] - 2 linhas retornadas da segunda query (resumo_total).
+2025-09-26 14:32:30 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
+2025-09-26 14:32:30 [INFO] - HTML das tabelas gerado com sucesso.
+2025-09-26 14:32:34 [INFO] - E-mail enviado com sucesso!
+2025-09-26 14:40:34 [INFO] - 8 linhas retornadas da primeira query (inadimplentes).
+2025-09-26 14:40:35 [INFO] - 2 linhas retornadas da segunda query (resumo_total).
+2025-09-26 14:40:36 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
+2025-09-26 14:40:37 [INFO] - HTML das tabelas gerado com sucesso.
+2025-09-26 14:40:39 [INFO] - E-mail enviado com sucesso!
+2025-09-26 14:41:33 [INFO] - 8 linhas retornadas da primeira query (inadimplentes).
+2025-09-26 14:41:34 [INFO] - 2 linhas retornadas da segunda query (resumo_total).
+2025-09-26 14:41:35 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
+2025-09-26 14:41:35 [INFO] - HTML das tabelas gerado com sucesso.
+2025-09-26 14:41:38 [INFO] - E-mail enviado com sucesso!
