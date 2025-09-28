@@ -711,3 +711,23 @@ gspread.exceptions.WorksheetNotFound: INADIMPLENTES
 2025-09-26 14:41:35 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
 2025-09-26 14:41:35 [INFO] - HTML das tabelas gerado com sucesso.
 2025-09-26 14:41:38 [INFO] - E-mail enviado com sucesso!
+2025-09-26 15:21:20 [INFO] - 8 linhas retornadas da primeira query (inadimplentes).
+2025-09-26 15:21:21 [INFO] - 2 linhas retornadas da segunda query (resumo_total).
+2025-09-26 15:21:22 [INFO] - 1 linhas retornadas da terceira query (valor_geral).
+2025-09-26 15:21:22 [INFO] - HTML das tabelas gerado com sucesso.
+2025-09-26 15:21:24 [ERROR] - Ocorreu um erro: {'': (501, b'<>: missing or malformed local part')}
+Traceback (most recent call last):
+  File "C:\0_Py\RESUMO_INADIMPLENTES\main.py", line 65, in <module>
+    send_email("Resumo de Inadimplentes", resumo_html_final)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\0_Py\RESUMO_INADIMPLENTES\mods\email_sender.py", line 40, in send_email
+    server.send_message(msg)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         rcpt_options)
+                         ^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'': (501, b'<>: missing or malformed local part')}

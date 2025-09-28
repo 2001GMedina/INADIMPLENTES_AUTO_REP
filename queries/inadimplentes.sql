@@ -8,6 +8,7 @@ WITH CLIENTES_MES_ATUAL AS (
         AND HS.DATA_ALTERACAO >= DATEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), 1)
         AND HS.DATA_ALTERACAO < DATEADD(DAY, 1, EOMONTH(GETDATE()))
 ),
+/*-------------------------------------------------------------------*/
 HIST AS (
     SELECT
         DISTINCT CAST(HS.DATA_ALTERACAO AS DATE) AS DATA_ALTERACAO,
@@ -27,6 +28,7 @@ HIST AS (
         HS.STATUS_ALTERADO IN (3, 33)
         AND HS.STATUS_ANTERIOR IN (2, 3, 33, 34)
 ),
+/*-------------------------------------------------------------------*/
 CLUSTERS AS (
     SELECT
         CLIENTE_ID,
@@ -44,6 +46,7 @@ CLUSTERS AS (
     GROUP BY
         CLIENTE_ID
 ),
+/*-------------------------------------------------------------------*/
 HIST_COM_CLUSTER AS (
     SELECT
         H.*,
@@ -56,6 +59,7 @@ HIST_COM_CLUSTER AS (
         HIST H
         LEFT JOIN CLUSTERS C ON H.CLIENTE_ID = C.CLIENTE_ID
 ),
+/*-------------------------------------------------------------------*/
 PARCELAS AS (
     SELECT
         CLIENTE_ID,
@@ -82,6 +86,7 @@ PARCELAS AS (
     GROUP BY
         CLIENTE_ID
 ),
+/*-------------------------------------------------------------------*/
 HIST_INAD AS (
     SELECT
         C.ID,
@@ -158,6 +163,7 @@ HIST_INAD AS (
             )
         )
 ),
+/*-------------------------------------------------------------------*/
 HIST_NUMERADO AS (
     SELECT
         *,
